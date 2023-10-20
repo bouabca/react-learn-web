@@ -1,0 +1,136 @@
+header ul.flex{
+  gap: 16px;
+ 
+ 
+
+}
+header ul.flex a{
+  color:var(--title);
+}
+header button{
+  height: 60px;
+  font-size: 1.2rem;
+}
+header.flex{
+  justify-content: space-between;
+ padding:0 2.4rem;
+ margin-top: 1.2rem;
+
+}
+header.flex nav{
+  background-color: var(--bgHeader);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  box-shadow: 1px 1px 40px rgb(41, 41, 41);
+}
+header.flex nav a:hover{
+  font-size: 0.9rem;
+  color: var(--blue)
+}
+header.flex button.menu{
+  display: none;
+}
+header .fixed{
+  position: fixed;
+  
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 11;
+  
+  background-color: rgba(40, 40, 44, 0.884);
+}
+header .fixed ul{
+  animation: move 1s 1;
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 2rem;
+ border-radius: 1rem;
+ padding: 1rem 2rem;
+ background-color: var(--secondary);
+ border: 1px solid var(--bordeer);
+ 
+  
+}
+header .fixed ul li a{
+  color:var(--title);
+  font-size: 0.88rem;
+  
+}
+header.flex .fixed ul li a:hover{
+  font-size: 0.9rem;
+  color: var(--blue)
+}
+header .fixed ul li{
+  border-bottom: 1px solid ver(--border);
+  margin-bottom: 1rem;
+}
+header .fixed ul li:first-child{
+
+  margin-left: 90%;
+  margin-bottom: 0px;
+  
+  
+}
+header .fixed ul li:first-child button{
+  all: unset;
+  
+  height: 27px;
+  cursor: pointer;
+  margin-left: 30px;
+  background-color: var(--secondary);
+ 
+}
+header .fixed ul li:first-child button:hover{
+  animation: rotate 1s 1 forwards;
+  
+color: red;}
+header .icon{
+  all: unset;
+  background-color: var(--bgHeader);
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(78, 71, 71);
+  width: 40px;
+  height: 40px;
+  transition: 0.9s;
+}
+header .icon:hover{
+  width: 42px;
+  height: 42px;
+  border: 1px solid  rgb(121, 113, 113);
+}
+
+
+
+
+
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(180deg);}
+}
+
+
+@keyframes move{
+  0%{scale:0;}
+  65%{scale:1.1;}
+  100%{scale: 1;}
+
+}
+
+
+
+@media (max-width:700px) {
+  header.flex nav{
+    display: none;
+  }
+  header.flex button.menu{
+    display: block;
+  }
+  
+}

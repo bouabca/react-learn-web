@@ -1,0 +1,48 @@
+section.hero .left-section{
+    flex-grow:1;
+    
+}
+section.hero{
+    margin-top: 3rem;
+}
+section.hero .parent-avatar .avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    border: 2px solid orange;
+    padding: 2px;
+    box-shadow: 2px 2px 10px orange;
+    margin-left: 20px;
+}
+section.hero .parent-avatar .icon-verified{
+    all: unset;
+    margin-top: 130px;
+    color: var(--blue)
+   
+}
+.left-section .title{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: var(--title);
+}
+.left-section .sub-title{
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: var(--subTiltle);
+}
+.left-section .icons{
+    display: flex;
+
+    gap: 16px;
+    color: var(--blue);
+}
+.left-section .icons .icon{
+    width: 15px;
+    height: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+.left-section .icons .icon:hover{
+font-size: 17px;
+}
